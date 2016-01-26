@@ -1,0 +1,57 @@
+navbar {
+
+  .navbar{
+    position: fixed;
+    width: 100%;
+    margin-top: 1%;
+  }
+  display: block;
+  background: white;
+
+  .container {
+    width: 91%;
+    max-width: 1340px;
+
+  }
+
+
+  .nav-title {
+    color: white;
+  }
+
+  .nav > li > a {
+    cursor: pointer;
+    transition: color 0.2s;
+    &.active {
+      color: darken(#f31214, 10%);
+    }
+    &:hover {
+      background: none;
+      color: #f31214;
+    }
+    &:focus {
+      background: none;
+    }
+  }
+
+  .login-button {
+    color: white;
+    float: right;
+    border: 1px solid white;
+    background: none;
+    outline: none !important;
+  }
+
+  .welcome {
+    float: right;
+    margin-top: 12px;
+    span {
+      color: white;
+    }
+    a {
+      color: #f30046;
+      cursor: pointer;
+    }
+  }
+
+}

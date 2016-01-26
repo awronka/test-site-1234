@@ -1,0 +1,28 @@
+
+body {
+  background: #fdfdfd;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    clear: both;
+  }
+}
+
+
+
+@import 'directives/main';
+@import 'home/main';
+@import 'about/main';
+@import 'tutorial/main';
+@import 'login/main';
+@import 'entry_one/entry_one';
+@import 'game_one/game_one';
+@import 'science/science';
+@import 'science/scienceSix';
+@import 'science/scienceSeven';
+@import 'bootstrap/bootstrap';
+@import 'toDoList/toDoList';
+@import 'lop/lop';
+// @import 'databuilder';

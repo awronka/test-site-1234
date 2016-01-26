@@ -1,0 +1,43 @@
+<div class="blog-box">
+	<div class="title-box"><h1 class="blog-title">Make a Simple Calculator</h1></div>
+	<div class="blog-content">
+		<div class="blog-paragraph">Better than code tests, building simple applications opens a better window into the skill of a developer. {{title}} </div>
+    <div class="desk">
+      <h1></h1>
+    <div class="calcBox">
+      <div class="number-line"><div id="fitin" class='title left'><div>{{title}}</div></div></div>
+      <div class="title"><span>Easy Calc</span></div>
+      <div class='operations-box'>
+        <div class="calc-row">
+        <div class="calc-button"ng-click='addValue(7)'><text>7</text></div>
+        <div class="calc-button"ng-click='addValue(8)'><text>8</text></div>
+        <div class="calc-button"ng-click='addValue(9)'><text>9</text></div>
+        <div class="calc-button"ng-click='makeOperation["*"](title)'><text>x</text></div>
+        </div>
+        <div class="calc-row">
+        <div class="calc-button"ng-click='addValue(4)'><text>4</text></div>
+        <div class="calc-button"ng-click='addValue(5)'><text>5</text></div>
+        <div class="calc-button"ng-click='addValue(6)'><text>6</text></div>
+        <div class="calc-button"ng-click='makeOperation["-"](title)'><text>-</text></div>
+        </div>
+        <div class="calc-row">
+        <div class="calc-button"ng-click='addValue(1)'><text>1</text></div>
+        <div class="calc-button"ng-click='addValue(2)'><text>2</text></div>
+        <div class="calc-button"ng-click='addValue(3)'><text>3</text></div>
+        <div class="calc-button"ng-click='makeOperation["+"](title)'><text>+</text></div>
+        </div>
+        <div class="calc-row">
+        <div class="calc-button"ng-click='addValue(".")'><text>.</text></div>
+        <div class="calc-button"ng-click='addValue(0)'><text>0</text></div>
+        <div class="calc-button"ng-click='makeOperation["/"](title)'><text>/</text></div>
+        <div class="calc-button"ng-click='equalFunc(title)'><text>=</text></div>
+        </div>
+        <div class="calc-row">
+         <div class="calc-button clear" ng-click='clear()'><text>CLEAR</text></div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="title"><span>Wronka Co.</span></div>
+	</div>
+</div>

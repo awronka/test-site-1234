@@ -1,0 +1,108 @@
+.blog-box-game{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-content: center;
+	.game-box{
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+	.game-title{
+		text-align: center;
+		margin-top: 40px;
+		width: 100%;
+	}
+	.options-box{
+		display: flex;
+		flex-direction: row;
+		.option{
+			width: 50%;
+			margin: 2% 4%;
+		}
+
+	}
+	.game-button-container{
+		align-content: center;
+		width: 100%;
+			button{
+			   display:block; /* change this from inline-block */
+				width:20%; /* setting the width */
+				margin:0 auto; /* this will center  it */
+				position:relative;
+				font-style:normal;
+				font-weight:normal;
+				font-family:"Open Sans";
+				font-size:14px;
+				outline:none;
+				color:#fff;
+				border:none;
+				text-decoration:none;
+				text-align:center;
+				cursor:pointer;
+				-webkit-border-radius:2px;
+				-moz-border-radius:2px;
+				border-radius:2px;
+				background-color:#96aa39;
+				border-bottom:1px solid #7b8b2f;
+		}
+	}
+
+	.mine-sweeper-box{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		.mine-game-row{
+			display: flex;
+			flex-direction: row;
+			.sweeper-box-top{
+
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				background-color: lightgray;
+				border: 1px solid black;
+				.sweeper-cover{
+					border-radius: 10px;
+					border: 2px solid grey;
+					opacity: .5;
+					width: 100%;
+					height: 100%;
+					background-color: darkgrey;
+				}
+			}
+		}
+	}
+ }
+ 	.animate-show {
+	position: relative;
+		bottom: 0px;
+	opacity: 1;
+	
+	}
+	
+	.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+		-webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+		-moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+		-o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+		transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+	}
+	
+	.animate-show.ng-hide {
+	
+	opacity: 0;
+	position: absolute;
+		bottom: 100px;
+	}
+ 
+ 
+ 
+}
+

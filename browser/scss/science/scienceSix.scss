@@ -1,0 +1,17 @@
+#containerSix{
+  svg {
+      border: 2px dotted lightblue;
+      
+      .axis path, .axis line{
+          fill: none;
+          stroke: black;
+          stroke-width: 1px;
+          shape-rendering: crispEdges;
+          
+       }
+       
+  }
+}
+
+
+

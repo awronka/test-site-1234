@@ -1,0 +1,41 @@
+<div class="sci-blog-box">
+	<div><div>wronka co.<span class="date"> Dec 10th, 2014</span></h1></div>
+<!-- 	<h1 class="thin-title">Simple Bar Graph</h1>		
+	<p>D3 or Data Drivin Documents, should be renamed unintuitive documents. Building a simple bar graph in D3 is a huge undertaking for the uninitiated, and we are initiated aren't we Bruce. If you want a simple solution go to Charts.js or HighCharts. They'll get you from zero to bar graph in no time. But if you take some time with D3, you'll see there's no more powerful library.</p>
+	<p>D3 is as simple as appending, an svg element to the DOM. What's an SVG element? Look it up.
+		But the first thing you want to do is.
+	</p>
+	<p>
+		Step 1: create a div with an id that you can append your svg element to. There's other ways of doing this, such as creating the svg in your html, but I'm going to attach it.'
+	</p>
+	<code class="html">&ltdiv class='bar-graph' id='svg-container&gt</code></div>
+	
+	<p>This snippet of html keeps the attachment logic located to the id, allowing a developer to easily replace svg's within the webpage</p>
+	<h2 class="sub-title">Attach SVG</h2>
+	<p></p> -->
+	<code class="javascript"><span>var svgHeight = 200,</span><span>width = 200;</span>
+			<span>&nbsp</span>
+			<span>//d3 set up</span>
+			<span>var svg = d3.select('#svg-container').append('svg')</span>
+			<span>	.attr('width', svgWidth)</span>
+			<span>	.attr('height', svgHeight)</span>
+   </code>
+		<div linear-chart chart-data="salesData"></div>
+		<form>
+		<label><input type="radio" name="dataset" value="setOne" checked> Set One</label>
+		<label><input type="radio" name="dataset" value="setTwo"> Set Two</label>
+		</form>
+<!-- 		<bar-schedule schedule-data="taskArray"></bar-schedule>
+ -->		<graph-five></graph-five>
+		<graph-six></graph-six>
+		<graph-seven></graph-seven>
+		<third-dee-three-graph graph-data="fictionalSalesData"></third-dee-three-graph>
+		<maze-creator></maze-creator>
+		<!---<unemployment-map></unemployment-map>
+		<text-book-two></text-book-two>
+		<text-book-three></text-book-three>
+		<book-four></book-four>
+        <book-five></book-five>
+        <book-six></book-six> -->
+		
+</div>

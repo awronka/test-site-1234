@@ -1,0 +1,134 @@
+.sci-blog-box{
+ font-family: "Helvetica Neue", Helvetica, sans-serif;
+ margin: 1em 5% 4em 5%;
+ font-size: 20px;
+ position: relative;
+ width: 960px;
+ display: block;
+ .date{
+   color: grey;
+ }
+ .thin-title{
+   font-size: 64px;
+    font-weight: 300;
+    letter-spacing: -2px;
+ }
+}
+code{
+  width: 600px;
+  max-width: 960px;
+  background-color: rgba($color: black, $alpha: .1);
+&.html {
+  color: darkblue;
+}
+&.css {
+  color: darkgreen;
+}
+&.javascript {
+  color: darkslateblue;
+}
+div{
+   background-color: rgba($color: black, $alpha: .1);
+}
+}
+
+
+
+.d3-schedule{
+#container{
+  margin: 0 auto;
+  position: relative;
+  width:800px;
+  overflow: visible;
+}
+
+
+  .svg {
+    width:800px;
+    height:400px;
+    overflow: visible;
+    
+}
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+
+#tag {
+  color: white;
+  background: #FA283D;
+  width: 150px;
+  position: absolute;
+  display: none;
+  padding:3px 6px;
+  margin-left: -80px;
+  font-size: 11px;
+}
+
+
+
+#tag:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+  border-width: 10px;
+  border-bottom-color: #FA283D;
+  top: -20px;
+}
+}
+.bar-graph{
+  .bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  color: blue;
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+}
+
+
+.counties {
+  fill: none;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.q0-9 { fill:rgb(247,251,255); }
+.q1-9 { fill:rgb(222,235,247); }
+.q2-9 { fill:rgb(198,219,239); }
+.q3-9 { fill:rgb(158,202,225); }
+.q4-9 { fill:rgb(107,174,214); }
+.q5-9 { fill:rgb(66,146,198); }
+.q6-9 { fill:rgb(33,113,181); }
+.q7-9 { fill:rgb(8,81,156); }
+.q8-9 { fill:rgb(8,48,107); }

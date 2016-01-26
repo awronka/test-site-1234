@@ -1,0 +1,44 @@
+<div class="blog-box-game">
+	<div class="game-box">
+	<div class="game-title"><h1>Angular Mine Sweeper</h1></div>
+	<form class="form-group">
+		<div class="options-box" ng-show="!gameSet">
+			<div class="option">
+        <label for="gameData">DIFFICULTY</label>
+        <select type="text" ng-model="game.difficulty" ng-change="logVal()" class="form-control" id="difficulty">
+			<option disabled selected>select your difficulty</option>
+			<option value=9>easy</option>
+			<option value=7>normal</option>
+			<option value=5>hard</option>
+		</select>
+		</div>
+		<div class="option">
+		<label for="gameData">BOARD SIZE</label>
+        <select ng-model="game.size" ng-change="logVal()" class="form-control" id="size">
+			<option disabled selected>select your board size</option>
+			<option value=10>small</option>
+			<option value=17>medium</option>
+			<option value=25>large</option>
+		</select>
+		</div>
+		</div>
+		<div class="game-button-container">
+		<button ng-click="makeGameBoard()" ng-show="!gameSet">start</button>
+		</div>
+    </form>
+	<div class="game-box">
+		<div class="mine-sweeper-box">
+			<h3 class="push-up animate-show" style="color:red;"  ng-show="!play">YOU LOSE!</h3>
+			<h3 class="push-up animate-show"  ng-show="win">YOU WIN!</h3>
+			<!--<h3 class="push-up animate-show"  ng-show="!win&&play">gotta love minesweeper</h3>-->
+		<div ng-repeat="rows in boxArray" class="mine-game-row">
+		<div ng-repeat="boxes in rows" id="{{$parent.$index}}-{{$index}}"class="sweeper-box-top" ng-click="clearBoard(boxArray,reveal,$parent.$index,$index)">
+			<div class="sweeper-cover" ng-show="!reveal[$parent.$index][$index]">
+			</div>
+			<text>{{boxes.num}}</text></div>
+		</div>
+		</div>
+	</div>
+	<button ng-click="reset()" ng-show="gameSet">reset</button>
+	</div>
+<div>

@@ -1,0 +1,47 @@
+.todo-content{
+	align-content: center;
+	margin: 5%;
+	.todos{
+		width: 300px;
+		height: 100px;
+		background-color: rgba(salmon, .5);
+		margin: 1% auto;
+		border-radius: 10px;
+		position: relative;
+		.inline{
+			float: left;
+			margin-left: 3%;
+			margin-top: -1%;
+		}
+		.title-box{
+			float: center;
+			margin-left: 3%;
+			margin-top: -1%;
+			h3{
+				margin-top: 10px;
+				font-weight: bold;
+			}
+		}
+		
+		.remove-todo{
+			position: absolute;
+			font-size: 13px;
+			padding: auto auto;
+			margin-left: 270px;
+			margin-top: 25px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			text-align: center;
+			background: red;
+			color: white;
+			box-shadow: 1px 1px 5px rgba(black, .5);
+			
+		}
+	    .remove-todo:active{
+			background: white;
+			color: red;
+			box-shadow: 0px 0px 5px rgba(black, .5);
+		}
+	}
+}

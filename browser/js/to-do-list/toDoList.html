@@ -1,0 +1,16 @@
+<div class="blog-box blog-content todo-content">
+    <label>To Do List</label>
+	<form id="login-form" name="loginForm" ng-submit="loginForm.$valid && newTodo(newtodo)">    
+		<pre>{{newtodo|json}}</pre>
+	<div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" ng-model="newtodo.title" class="form-control" id="title" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+        <label for="todo-text">text</label>
+        <input type="text" ng-model="newtodo.text" class="form-control" id="todo-text" placeholder="text">
+    </div>
+	<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+<div class="todos" ng-repeat="toDo in toDoArray"><div class="title-box"><h3>{{toDo.title.toUpperCase()}}</h3></div><div class="inline">{{toDo.text}}</div><div class="remove-todo" ng-click="delete(toDo._id)">X</div></div>
+<button style="margin-top:60px; margin-left:60px;" ng-click="getToDos()">mybutton</button></div>
